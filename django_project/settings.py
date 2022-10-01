@@ -114,6 +114,9 @@ STATICFILES_DIRS = [
     # or 'HomePage_app/static'
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# or STATIC_ROOT=BASE_DIR/'staticfiles'
+
 # Enable WhiteNoise's GZip compression of static assets.
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
